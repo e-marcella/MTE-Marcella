@@ -1,0 +1,34 @@
+/* Responsive Button Improvements */
+.btn-custom {
+  background-color: #222;
+  color: white;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+/* Hover */
+.btn-custom:hover {
+  background-color: #f8c146;
+  color: black;
+}
+
+/* Mobile-first: full width */
+.btn-custom {
+  width: 100%;
+}
+
+/* Tablet and up: auto width */
+@media (min-width: 768px) {
+  .btn-custom {
+    width: auto;
+  }
+}
+
+/* Make buttons easier to tap on mobile */
+@media (max-width: 576px) {
+  .btn-custom {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
